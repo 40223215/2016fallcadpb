@@ -18,3 +18,15 @@
 	path = g1
 	url = https://github.com/40123252/2016fallcadp_bg1.git
 	branch = gh-pages
+[submodule "g2"]
+	path = g2
+	url = https://github.com/40223205/2016fallcadp_bg2.git
+	branch = gh-pages
+[submodule "g3"]
+	path = g3
+	url = https://github.com/40423201/2016fallcadp_bg03.git
+	branch = gh-pages
+[submodule "g9"]
+	path = g9
+	url = https://github.com/40423209/2016fallcadp_bg9.git
+	branch = gh-pages
