@@ -1,0 +1,4 @@
+[submodule "g1"]
+	path = g1
+	url = https://github.com/40123252/2016fallcadp_bg1.git
+	branch = gh-pages
