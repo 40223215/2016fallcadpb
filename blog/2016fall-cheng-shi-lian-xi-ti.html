@@ -390,6 +390,37 @@ container2 <= data
 <p>將近端的改版資料提交推送到遠端</p>
 </li>
 </ol>
+<p>之後, 又發現 g6 設定上也有問題, 因此也要先行移除.</p>
+<p>錯誤產生於子模組設定過程, 沒能完整移除先前設定的子模組:</p>
+<p><img src="./../images/Screenshot from 2016-10-22 13:41:17.png" width="800" /></p>
+<p><img src="./../images/Screenshot from 2016-10-22 13:43:11.png" width="800" /></p>
+<p>移除 g6 步驟:</p>
+<ol>
+<li>
+<p>編輯 .gitmodules, 移除 g6 對應子模組設定</p>
+</li>
+<li>
+<p>在版本資料納入 .gitmodules 所作的修改, git add .gitmodules</p>
+</li>
+<li>
+<p>編輯 .git/config , 移除 g6 對應子模組設定</p>
+</li>
+<li>
+<p>執行 git rm --cached g6</p>
+</li>
+<li>
+<p>執行 rm -rf .git/modules/g6</p>
+</li>
+<li>
+<p>執行 rm -rf g6</p>
+</li>
+<li>
+<p>將近端的改版資料提交推送到遠端</p>
+</li>
+<li>
+<p>將近端的改版資料提交推送到遠端</p>
+</li>
+</ol>
             </div>
             <!-- /.entry-content -->
         </article>
