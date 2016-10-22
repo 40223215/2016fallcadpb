@@ -109,6 +109,7 @@
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="amd.20160727120222.1"><vh>@edit 20160921.md</vh></v>
+<v t="yen.20161022130116.1"><vh>@edit 20161022.md</vh></v>
 </v>
 </v>
 </v>
@@ -118,6 +119,7 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
+<v t="yen.20161022124416.1"><vh>@button https server</vh></v>
 </vnodes>
 <tnodes>
 <t tx="amd.20151215170031.1"></t>
@@ -707,5 +709,27 @@ Created by [kmolab](http://chiamingyen.github.io/kmolab/blog/)
 @others
 &lt;/section&gt;
 </t>
+<t tx="yen.20161022124416.1">@language python
+import os
+import subprocess
+import threading
+import http.server, ssl
+
+def domake():
+    # build directory
+    os.chdir("./../")
+    server_address = ('localhost', 4443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("4443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
 </tnodes>
 </leo_file>
