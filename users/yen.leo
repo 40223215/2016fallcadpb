@@ -128,6 +128,7 @@
 </v>
 </v>
 <v t="yen.20161022124416.1"><vh>@button https server</vh></v>
+<v t="yen.20161022145129.1"><vh>子模組資料</vh></v>
 </vnodes>
 <tnodes>
 <t tx="amd.20151215170031.1"></t>
@@ -742,5 +743,33 @@ make.start()</t>
 <t tx="yen.20161022132258.1"></t>
 <t tx="yen.20161022132307.1"></t>
 <t tx="yen.20161022132456.1"></t>
+<t tx="yen.20161022145129.1">[submodule "g1"]
+	path = g1
+	url = https://github.com/40123252/2016fallcadp_bg1.git
+	branch = gh-pages
+[submodule "g2"]
+	path = g2
+	url = https://github.com/40223205/2016fallcadp_bg2.git
+	branch = gh-pages
+[submodule "g3"]
+	path = g3
+	url = https://github.com/40423201/2016fallcadp_bg03.git
+	branch = gh-pages
+[submodule "g7"]
+	path = g7
+	url = https://github.com/404232077/2016fallcadp_bg07.git
+	branch = gh-pages
+[submodule "g8"]
+	path = g8
+	url = https://github.com/40423208/2016fallcadp_bg8.git
+	branch = gh-pages
+[submodule "g11"]
+	path = g11
+	url = https://github.com/40423234/2016fallcadp_bg11.git
+	branch = gh-pages
+[submodule "g5"]
+	path = g5
+	url = https://github.com/40423205/2016fallcadp_bg5.git
+	branch = gh-pages</t>
 </tnodes>
 </leo_file>
