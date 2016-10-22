@@ -475,6 +475,31 @@ container2 <= data
 <p>加入 g1, 沒有問題.</p>
 <p>加入 g2, 沒有問題.</p>
 <p>加入 g3, 沒有問題.</p>
+<p>已經確定 g7 有問題, 必須移除</p>
+<p>移除 g 7 步驟:</p>
+<ol>
+<li>
+<p>編輯 .gitmodules, 移除 g7對應子模組設定</p>
+</li>
+<li>
+<p>在版本資料納入 .gitmodules 所作的修改, git add .gitmodules</p>
+</li>
+<li>
+<p>編輯 .git/config , 移除 g7 對應子模組設定</p>
+</li>
+<li>
+<p>執行 git rm --cached g7</p>
+</li>
+<li>
+<p>執行 rm -rf .git/modules/g7</p>
+</li>
+<li>
+<p>執行 rm -rf g7</p>
+</li>
+<li>
+<p>將近端的改版資料提交推送到遠端</p>
+</li>
+</ol>
             </div>
             <!-- /.entry-content -->
         </article>
