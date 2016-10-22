@@ -1,7 +1,3 @@
-[submodule "g4"]
-	path = g4
-	url = https://github.com/40423204/2016fallcadp_bg4.git
-	branch = gh-pages
 [submodule "g6"]
 	path = g6
 	url = https://github.com/40423206/2016fallcadp_bg6.git

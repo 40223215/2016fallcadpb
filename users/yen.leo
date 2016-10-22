@@ -119,6 +119,14 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
+<v t="yen.20161022132258.1" a="E"><vh>移除子模組</vh>
+<v t="yen.20161022132307.1" a="E"><vh>@path ./../</vh>
+<v t="yen.20161022132317.1"><vh>@edit .gitmodules</vh></v>
+<v t="yen.20161022132456.1" a="E"><vh>@path .git</vh>
+<v t="yen.20161022132504.1"><vh>@edit config</vh></v>
+</v>
+</v>
+</v>
 <v t="yen.20161022124416.1"><vh>@button https server</vh></v>
 </vnodes>
 <tnodes>
@@ -731,5 +739,8 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
+<t tx="yen.20161022132258.1"></t>
+<t tx="yen.20161022132307.1"></t>
+<t tx="yen.20161022132456.1"></t>
 </tnodes>
 </leo_file>

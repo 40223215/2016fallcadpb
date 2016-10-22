@@ -361,6 +361,35 @@ container2 <= data
 <p><br />
 <br /></p>
 <p>現在, 誰能夠幫我們找出至今尚未納入分組名單中的學員, 共有那些人？</p>
+<p>另外, 在推送版本資料時, Github 發出以下錯誤:</p>
+<p><img src="./../images/Screenshot from 2016-10-22 13:08:05.png" width="800" /></p>
+<p>發生錯誤的地方在此, 分組倉儲的分支又設為該倉儲的子模組:</p>
+<p><img src="./../images/Screenshot from 2016-10-22 13:17:48.png" width="800" /></p>
+<p>處理方式, 先移除 g4, 等錯誤修正後, 再補上來.</p>
+<p>移除 g4 步驟:</p>
+<ol>
+<li>
+<p>編輯 .gitmodules, 移除 g4 對應子模組設定</p>
+</li>
+<li>
+<p>在版本資料納入 .gitmodules 所作的修改, git add .gitmodules</p>
+</li>
+<li>
+<p>編輯 .git/config , 移除 g4 對應子模組設定</p>
+</li>
+<li>
+<p>執行 git rm --cached g4</p>
+</li>
+<li>
+<p>執行 rm -rf .git/modules/g4</p>
+</li>
+<li>
+<p>執行 rm -rf g4</p>
+</li>
+<li>
+<p>將近端的改版資料提交推送到遠端</p>
+</li>
+</ol>
             </div>
             <!-- /.entry-content -->
         </article>
