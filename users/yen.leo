@@ -119,7 +119,7 @@
 </v>
 </v>
 <v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
-<v t="yen.20161022132258.1" a="E"><vh>移除子模組</vh>
+<v t="yen.20161022132258.1"><vh>移除子模組</vh>
 <v t="yen.20161022132307.1" a="E"><vh>@path ./../</vh>
 <v t="yen.20161022132317.1"><vh>@edit .gitmodules</vh></v>
 <v t="yen.20161022132456.1" a="E"><vh>@path .git</vh>
@@ -127,7 +127,9 @@
 </v>
 </v>
 </v>
+<v t="yen.20161022151637.1"><vh>在近端工作模式</vh></v>
 <v t="yen.20161022124416.1"><vh>@button https server</vh></v>
+<v t="yen.20161022151553.1"><vh>產生 .key 與 .crt</vh></v>
 <v t="yen.20161022145129.1"><vh>子模組資料</vh></v>
 </vnodes>
 <tnodes>
@@ -771,5 +773,9 @@ make.start()</t>
 	path = g5
 	url = https://github.com/40423205/2016fallcadp_bg5.git
 	branch = gh-pages</t>
+<t tx="yen.20161022151553.1">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt
+
+</t>
+<t tx="yen.20161022151637.1">啟動 https://localhost:4443 後可以直接測試</t>
 </tnodes>
 </leo_file>
